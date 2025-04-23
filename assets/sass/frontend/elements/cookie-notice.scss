@@ -1,0 +1,39 @@
+#iworks-cookie-notice {
+	background-color: var(--color-theme-white);
+	color: var(--color-theme-black);
+	padding: var(--spacer-10) padding_clamp();
+
+	.cookie-notice-container {
+		text-align: center;
+		display: grid;
+		grid-template-columns: auto 30px;
+		column-gap: 20px;
+		@include default_width;
+		@include font(12, 15);
+
+		.button {
+			@include reset;
+			display: block;
+			width: 20px;
+			height: 20px;
+			overflow: hidden;
+			text-indent: -999em;
+
+			background: {
+				repeat: no-repeat;
+				size: contain;
+				position: 50%;
+				@include icon('close.svg');
+			}
+
+			&:focus,
+			&:focus-within {
+				border: 2px solid var(--color-theme-accent);
+			}
+		}
+
+		a {
+			color: var(--color-theme-accent);
+		}
+	}
+}

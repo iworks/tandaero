@@ -1,0 +1,88 @@
+form {
+
+	button,
+	input[type=submit] {
+		@include button;
+	}
+
+	input[type=text],
+	input[type=email],
+	input[type=password],
+	select,
+	textarea {
+		@include radius;
+		background-color: var(--color-theme-white);
+		border-color: var(--color-theme-black);
+		padding: var(--spacer-8);
+		width: 100%;
+	}
+
+	label {}
+
+	.required-descrpition {
+		strong {
+			color: var(--color-theme-alert);
+		}
+	}
+
+	.required {
+		label {
+			span {
+				&:after {
+					content: "*";
+					color: var(--color-theme-alert);
+				}
+			}
+
+			div {
+				span {
+					&:after {
+						content: "";
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	[disabled],
+	[readonly] {
+		opacity: .5;
+
+		&:hover {
+			cursor: default;
+		}
+	}
+
+	fieldset {
+		border: 0;
+	}
+
+	.select2-container {
+		width: 100% !important;
+	}
+}
+
+.button,
+.wp-element-button {
+	@include button;
+}
+
+.wp-block-file {
+	@media screen and (max-width: #{ $width_sm - 1px }) {
+		padding-top: var(--spacer-10);
+
+		.wp-block-file__button {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	@media screen and (min-width: $width_sm) {
+		text-align: right;
+	}
+
+	.wp-block-file__button {
+		@include button_reverse;
+	}
+}

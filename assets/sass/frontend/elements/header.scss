@@ -1,0 +1,17 @@
+.site-header {}
+
+#site-navigation {
+	&.toggled {
+		ul {
+			ul {
+				display: none;
+			}
+
+			.focus {
+				ul {
+					display: block;
+				}
+			}
+		}
+	}
+}

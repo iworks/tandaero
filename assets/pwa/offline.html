@@ -1,0 +1,44 @@
+<!doctype html>
+<html %HTML_LANGUAGE_ATTRIBUTES%>
+    <head>
+        <meta charset="%CHARSET%">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>%SORRY% - %NAME%</title>
+        <style>
+body {
+    background-color: #eee;
+    color: #2a2d2e;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.25em;
+    width: 100%;
+    margin: 0;
+}
+header {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 15%);
+    font-size: 1em;
+    background-color: #fff;
+}
+p {
+    padding: 0 10px;
+}
+p+p {
+    font-weight: bold;
+}
+header svg {
+    margin: 10px auto;
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+        </style>
+    </head>
+    <body>
+        <header>%SVG%</header>
+        <div class="container">
+            %CONTENT%
+        </div>
+    </body>
+</html>

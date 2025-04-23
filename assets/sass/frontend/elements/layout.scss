@@ -1,0 +1,7 @@
+#page {
+	@include default_width;
+	background: {
+		color: var(--color-theme-white);
+	}
+}
+

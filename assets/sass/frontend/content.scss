@@ -1,0 +1,22 @@
+@import '_mixin';
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--color-theme-background-body);
+	color: var(--color-theme-text);
+	padding: var(--spacer-32);
+}
+
+
+@import 'elements/header.scss';
+@import 'elements/layout.scss';
+@import 'elements/forms.scss';
+@import 'elements/home.scss';
+@import 'elements/front-page.scss';
+@import 'elements/cookie-notice.scss';
+@import 'elements/lds-spinner.scss';
+@import 'elements/footer.scss';
+@import 'elements/commons.scss';
