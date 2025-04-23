@@ -15,6 +15,16 @@ body {
 }
 
 a {
+	color: var(--color-theme-link);
+	&:visited {
+		color: var(--color-theme-link-visited);
+	}
+	&:hover {
+		color: var(--color-theme-link-hover);
+	}
+	&:active {
+		color: var(--color-theme-link-active);
+	}
 	&[rel=external] {
 		display: flex;
 		gap: 8px;

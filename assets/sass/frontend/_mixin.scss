@@ -100,6 +100,16 @@ $font_root: 'assets/fonts/';
 	@include image('backgrounds/#{$image}');
 }
 
+@mixin logo {
+	background: {
+		align: center;
+		color: none;
+		image: iurl('logo.svg');
+		repeat: no-repeat;
+		size: contain;
+	}
+}
+
 @mixin bbg($image ) {
 	display: block;
 
@@ -134,6 +144,17 @@ $font_root: 'assets/fonts/';
 			left: var(--spacer-8);
 			right: var(--spacer-8);
 		}
+	}
+}
+
+@mixin width_inner {
+	width: 87%;
+	margin: {
+		left: auto;
+		right: auto;
+	}
+	min: {
+		width: #{ $width_sm * 1px };
 	}
 }
 
