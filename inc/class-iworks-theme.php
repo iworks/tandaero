@@ -270,6 +270,7 @@ class iWorks_Theme extends iWorks_Theme_Base {
 			array(
 				'primary' => esc_html__( 'Primary', 'tadanero' ),
 				'footer'  => esc_html__( 'Footer', 'tadanero' ),
+				'social'  => esc_html__( 'Social Media', 'tadanero' ),
 			)
 		);
 		add_theme_support(

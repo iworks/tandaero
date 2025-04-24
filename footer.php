@@ -12,19 +12,32 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'tadanero' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'tadanero' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'tadanero' ), 'tadanero', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="site-footer-container">
+			<div class="site-info">
+<?php
+wp_nav_menu(
+	array(
+		'theme_location'  => 'footer',
+		'menu_id'         => 'footer-menu',
+		'container_class' => 'footer-navigation-container',
+	)
+);
+?>
+			</div>
+			<div class="site-info">
+<?php
+wp_nav_menu(
+	array(
+		'theme_location'  => 'social',
+		'menu_id'         => 'social-menu',
+		'container_class' => 'social-navigation-container',
+		'link_before'     => '<span class="sr-only">',
+		'link_after'      => '</span>',
+	)
+);
+?>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

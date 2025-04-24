@@ -5,18 +5,26 @@ html {
 }
 
 body {
-	background-color: var(--color-theme-background-body);
+	background: {
+		color: var(--color-theme-background-body);
+	}
+
 	color: var(--color-theme-text);
 	padding: var(--spacer-32);
+
+	font: {
+		family: var(--font-family-serif);
+	}
 }
 
 
-@import 'elements/header.scss';
-@import 'elements/layout.scss';
-@import 'elements/forms.scss';
-@import 'elements/home.scss';
-@import 'elements/front-page.scss';
-@import 'elements/cookie-notice.scss';
-@import 'elements/lds-spinner.scss';
-@import 'elements/footer.scss';
-@import 'elements/commons.scss';
+@import 'elements/header';
+@import 'elements/layout';
+@import 'elements/forms';
+@import 'elements/home';
+@import 'elements/front-page';
+@import 'elements/singular';
+@import 'elements/cookie-notice';
+@import 'elements/lds-spinner';
+@import 'elements/footer';
+@import 'elements/commons';
