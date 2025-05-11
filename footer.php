@@ -20,6 +20,7 @@ wp_nav_menu(
 		'theme_location'  => 'footer',
 		'menu_id'         => 'footer-menu',
 		'container_class' => 'footer-navigation-container',
+		'depth'           => 1,
 	)
 );
 ?>
@@ -33,6 +34,7 @@ wp_nav_menu(
 		'container_class' => 'social-navigation-container',
 		'link_before'     => '<span class="sr-only">',
 		'link_after'      => '</span>',
+		'depth'           => 1,
 	)
 );
 ?>

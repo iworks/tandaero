@@ -139,7 +139,7 @@ $font_root: 'assets/fonts/';
 		max-width: 100%;
 	}
 
-	@include media_max( $width_md * 1px ) {
+	@include media_max($width_md * 1px) {
 		margin: {
 			left: var(--spacer-8);
 			right: var(--spacer-8);
@@ -149,10 +149,12 @@ $font_root: 'assets/fonts/';
 
 @mixin width_inner {
 	width: 87%;
+
 	margin: {
 		left: auto;
 		right: auto;
 	}
+
 	min: {
 		width: #{ $width_sm * 1px };
 	}
@@ -432,4 +434,34 @@ $font_root: 'assets/fonts/';
 	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
 	white-space: nowrap;
+}
+
+@mixin header {
+	&-header {
+		background: {
+			color: var(--color-theme-02);
+		}
+
+		text: {
+			align: center;
+		}
+
+		padding: {
+			bottom: var(--spacer-80);
+			top: var(--spacer-80);
+		}
+	}
+
+	&-title {
+		margin: 0;
+		@include width_inner;
+
+		text: {
+			transform: uppercase;
+		}
+
+		font: {
+			weight: var(--font-weight-normal);
+		}
+	}
 }

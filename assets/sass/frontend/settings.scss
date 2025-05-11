@@ -14,9 +14,12 @@
 
 	--color-theme-01: #f3f3f3;
 	--color-theme-02: #f6f6f6;
-	--color-theme-03: #b5b5b5;
+	--color-theme-03: #666;
 
-	--color-theme-04: #c8cfd8;
+
+
+	--color-theme-04: #666;
+
 	--color-theme-05: #5b6773;
 	--color-theme-06: #c8cfd8;
 
@@ -53,6 +56,7 @@
 	--padding-base: 16px;
 
 	--spacer-80: calc(5 * var(--padding-base));
+	--spacer-64: calc(3 * var(--padding-base));
 	--spacer-40: calc(2.5 * var(--padding-base));
 	--spacer-32: calc(2 * var(--padding-base));
 	--spacer-28: calc(1.75 * var(--padding-base));

@@ -14,7 +14,10 @@ class iWorks_Theme extends iWorks_Theme_Base {
 		/**
 		 * Cookie Class
 		 */
-		if ( ! is_admin() ) {
+		if (
+			apply_filters( 'iworks/theme/load-cookies', false )
+			&& ! is_admin()
+		) {
 			include_once 'class-iworks-cookie-notice.php';
 			new iWorks_Cookie_Notice;
 		}

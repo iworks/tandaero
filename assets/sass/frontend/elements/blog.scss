@@ -1,0 +1,27 @@
+body {
+	&.blog {
+		#primary {
+			.page {
+				@include header;
+			}
+		}
+		.site {
+			&-main {
+				@include default_width;
+				padding: var(--spacer-64) var(--spacer-32);
+				display: grid;
+				gap: var(--spacer-32);
+				grid: {
+					template: {
+						columns: auto 250px;
+					}
+				}
+				article {
+					overflow: hidden;
+					max-width: 790px;
+					color: var(--color-theme-03);
+				}
+			}
+		}
+	}
+}

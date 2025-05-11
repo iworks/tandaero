@@ -2,33 +2,7 @@ body {
 	&.wp-singular {
 		.hentry {
 			.entry {
-				&-header {
-					background: {
-						color: var(--color-theme-02);
-					}
-
-					text: {
-						align: center;
-					}
-
-					padding: {
-						bottom: var(--spacer-80);
-						top: var(--spacer-80);
-					}
-				}
-
-				&-title {
-					margin: 0;
-					@include width_inner;
-
-					text: {
-						transform: uppercase;
-					}
-
-					font: {
-						weight: var(--font-weight-normal);
-					}
-				}
+				@include header;
 
 				&-content {
 					> {
