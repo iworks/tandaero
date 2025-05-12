@@ -15,18 +15,22 @@
 		<div class="site-footer-container">
 			<div class="site-info">
 <?php
-wp_nav_menu(
-	array(
-		'theme_location'  => 'footer',
-		'menu_id'         => 'footer-menu',
-		'container_class' => 'footer-navigation-container',
-		'depth'           => 1,
-	)
-);
+
+if ( has_nav_menu( 'footer' ) ) {
+	wp_nav_menu(
+		array(
+			'theme_location'  => 'footer',
+			'menu_id'         => 'footer-menu',
+			'container_class' => 'footer-navigation-container',
+			'depth'           => 1,
+		)
+	);
+}
 ?>
 			</div>
 			<div class="site-info">
 <?php
+if ( has_nav_menu( 'social' ) ) {
 wp_nav_menu(
 	array(
 		'theme_location'  => 'social',
@@ -37,6 +41,7 @@ wp_nav_menu(
 		'depth'           => 1,
 	)
 );
+}
 ?>
 			</div>
 		</div>

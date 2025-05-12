@@ -28,7 +28,9 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			the_custom_logo();
+			if ( has_custom_logo() ) {
+				the_custom_logo();
+			}
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -48,12 +50,13 @@
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'tadanero' ); ?></button>
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location'  => 'primary',
-					'menu_id'         => 'primary-menu',
-					'container_class' => 'main-navigation-container',
-				)
+			if ( has_nav_menu( 'primary' ) ) {
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'menu_id'         => 'primary-menu',
+						'container_class' => 'main-navigation-container',
+					)
 			);
 			?>
 		</nav><!-- #site-navigation -->

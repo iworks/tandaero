@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: THEME_NAME THEME_VERSION.BUILDTIMESTAMP\n"
+"Project-Id-Version: Tadanero THEME_VERSION.BUILDTIMESTAMP\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/tadanero\n"
-"POT-Creation-Date: 2025-04-25 07:26:55+00:00\n"
+"POT-Creation-Date: 2025-05-11 16:59:44+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,15 +41,6 @@ msgstr ""
 #: 404.php:48
 #. translators: %1$s: smiley
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
-
-#: comments.php:35
-#. translators: 1: title.
-msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
-
-#: comments.php:68
-msgid "Comments are closed."
 msgstr ""
 
 #: header.php:26
@@ -101,31 +92,31 @@ msgstr ""
 msgid "Tadanero: %s"
 msgstr ""
 
-#: inc/class-iworks-theme.php:226
+#: inc/class-iworks-theme.php:229
 msgid "Footer One"
 msgstr ""
 
-#: inc/class-iworks-theme.php:234
+#: inc/class-iworks-theme.php:237
 msgid "Sidebar"
 msgstr ""
 
-#: inc/class-iworks-theme.php:236
+#: inc/class-iworks-theme.php:239
 msgid "Add widgets here."
 msgstr ""
 
-#: inc/class-iworks-theme.php:271
+#: inc/class-iworks-theme.php:274
 msgid "Primary"
 msgstr ""
 
-#: inc/class-iworks-theme.php:272
+#: inc/class-iworks-theme.php:275
 msgid "Footer"
 msgstr ""
 
-#: inc/class-iworks-theme.php:273 inc/class-iworks-user.php:49
+#: inc/class-iworks-theme.php:276 inc/class-iworks-user.php:49
 msgid "Social Media"
 msgstr ""
 
-#: inc/class-iworks-theme.php:296 inc/class-iworks-theme.php:297
+#: inc/class-iworks-theme.php:299 inc/class-iworks-theme.php:300
 msgid "Patterns"
 msgstr ""
 
@@ -234,7 +225,7 @@ msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "THEME_NAME"
+msgid "Tadanero"
 msgstr ""
 
 #. Theme URI of the plugin/theme
@@ -252,14 +243,6 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "THEME_AUTHOR_URI"
 msgstr ""
-
-#: comments.php:41
-#. translators: 1: comment count number, 2: title.
-msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
 
 #: inc/class-iworks-cookie-notice.php:71
 msgctxt "in cookie message, mayby propoer form"

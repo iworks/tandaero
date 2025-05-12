@@ -15,15 +15,13 @@
 
 		&-container {
 			@include width_inner;
+
 			display: flex;
+			justify-content: space-between;
+			align-items: center;
 
-			justify: {
-				content: space-between;
-			}
-
-			align: {
-				items: center;
-			}
+			font-size: var(--font-size-sm);
+			font-weight: var(--font-weight-light);
 		}
 
 		.menu {
@@ -33,10 +31,7 @@
 
 			a {
 				color: var(--color-theme-03);
-
-				text: {
-					decoration: none;
-				}
+				text-decoration: none;
 
 				&:hover,
 				&:focus,
@@ -49,29 +44,21 @@
 }
 
 #social-menu {
+	display: flex;
 	gap: var(--spacer-16);
 
 	li {
-		line: {
-			height: 0;
-		}
+		line-height: 0;
 	}
 
 	svg {
 		width: 24px;
 		height: 24px;
-		fill: var(--color-theme-03);
-
-		transition: {
-			duration: .4s;
-		}
+		fill: var(--color-theme-text-light);
+		transition: fill 0.4s;
 	}
 
-	a {
-		&:hover {
-			svg {
-				fill: var(--color-theme-accent);
-			}
-		}
+	a:hover svg {
+		fill: var(--color-theme-accent);
 	}
 }
